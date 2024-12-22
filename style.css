@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://tse3.mm.bing.net/th?id=OIP.Bpzxhafaukys644Q6E2kawHaEK&pid=Api&P=0&h=180);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Parallax effect */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100vh;
+  color: #333; /* Default font color for better readability */
+}
+
+main {
+  background-color: rgba(189, 162, 146, 0.85); /* Default for mild weather */
+  position: relative;
+  top: 30%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 540px;
+  max-width: 40%;
+  margin: auto;
+  padding: 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease-in-out; /* Smooth transition for color change */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: xx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: #333; /* Contrast with the background */
+}
+
+#search {
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  height: 42px;
+}
+
+#submit {
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 5em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: rgb(89, 172, 212);
+  color: white;
+}
+
+#weather-wrapper {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
+}
+
+#weather-search {
+  display: flex;
+  width: 50%;
+}
+
+#weather-data {
+  background-color: rgba(255, 255, 255, 0.85); /* Adjust transparency for readability */
+  border-radius: 5px;
+  padding: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+#weather-data > img {
+  width: 100px; /* Set a standard width */
+  height: 100px; /* Match height for circular shape */
+  border-radius: 50%;
+  background-color: lightskyblue;
+  padding: 5px; /* Add padding for aesthetics */
+  object-fit: cover; /* Ensure the image fits nicely */
+}
