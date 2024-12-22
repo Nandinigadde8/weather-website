@@ -4,7 +4,7 @@ async function fetchWeather() {
   const weatherDataSection = document.getElementById("weather-data");
   weatherDataSection.style.display = "block";
 
-  const apiKey = "b6f258a38e0e11b3dc693a6c5adf119e"; // Replace this with your actual OpenWeather API key
+  const apiKey = "your_api_key"; 
 
   // Check if input is empty
   if (searchInput === "") {
@@ -47,16 +47,15 @@ async function fetchWeather() {
       `;
       return null;
     }
-    return data[0]; // Return the first result with lat/lon
+    return data[0]; 
   }
 
-  // Get latitude and longitude
+  
   const geocodeData = await getLonAndLat();
-  if (!geocodeData) return; // Exit if geocode data is invalid
+  if (!geocodeData) return; 
 
   const { lon, lat } = geocodeData;
 
-  // Fetch weather data
   const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
   const weatherResponse = await fetch(weatherURL);
 
@@ -73,7 +72,7 @@ async function fetchWeather() {
 
   const weatherData = await weatherResponse.json();
 
-  // Display weather data
+  
   weatherDataSection.innerHTML = `
     <img src="https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png" 
          alt="${weatherData.weather[0].description}" width="100" />
@@ -86,6 +85,6 @@ async function fetchWeather() {
     </div>
   `;
 
-  // Clear the input field
+
   document.getElementById("search").value = "";
 }
