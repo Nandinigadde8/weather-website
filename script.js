@@ -6,7 +6,7 @@ async function fetchWeather() {
 
   const apiKey = "your_api_key"; 
 
-  // Check if input is empty
+  
   if (searchInput === "") {
     weatherDataSection.innerHTML = `
       <div>
@@ -17,7 +17,7 @@ async function fetchWeather() {
     return;
   }
 
-  // Function to get longitude and latitude
+  
   async function getLonAndLat() {
     const geocodeURL = `https://api.openweathermap.org/geo/1.0/direct?q=${searchInput.replace(
       " ",
