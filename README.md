@@ -1,6 +1,6 @@
 # Weather Website 🌤️  
 
-Welcome to the Weather App! This is a simple and interactive app that lets you check the weather for any city. It’s designed to be easy to use, fast, and visually appealing.  
+Welcome to the Weather Website! This is a simple and interactive website that lets you check the weather for any city. It’s designed to be easy to use, fast, and visually appealing.  
 
 
 ## Why We Used an API  
@@ -24,7 +24,7 @@ You might wonder how the website knows the current weather in your city. That’
 1. Open the website.  
 2. Type a city name into the search bar.  
 3. Click the "Search" button.  
-4. The app shows:  
+4. The website shows:  
    - Current temperature 🌡️  
    - Weather description (e.g., cloudy, sunny, rainy) 🌧️  
    - Humidity and wind speed 💨  
@@ -35,7 +35,7 @@ You might wonder how the website knows the current weather in your city. That’
 ## Technologies Behind the Scenes  
 
 Here’s what makes the website tick:  
-- **HTML**: The backbone of the app (structure).  
+- **HTML**: The backbone of the website (structure).  
 - **CSS**: Makes the app look beautiful and responsive.  
 - **JavaScript**: Handles the dynamic parts, like fetching data and updating the weather info.  
 - **Weather API**: This is where we get the live weather data.  
